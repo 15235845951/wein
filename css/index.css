@@ -1,0 +1,580 @@
+/*
+* @Author: Administrator
+* @Date:   2018-03-24 08:09:32
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-04-11 16:21:18
+*/
+.allnone{
+	display: none;
+
+}
+.block{
+	display: block;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background: #f4f4f4;
+}
+header{
+	width: 100%;
+	height: 4.7rem;
+	background: url('../img/screen.png') no-repeat center bottom,-webkit-linear-gradient(top, #323b7a ,#3c79b9);
+	background-size: contain;
+	overflow: hidden;
+}
+.city{
+  font-size: 0.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.2rem;
+  line-height: 0.24rem;
+  color: #ffffff;
+}
+.kongqi{
+	width: 0.72rem;
+	height: 0.44rem;
+	background: #f1ab62;
+	border-radius: 0.08rem;
+	margin-left: 0.08rem;
+	margin-top: 0.24rem;
+	overflow: hidden;
+}
+.kongqi h1{
+	font-size: 0.12rem;
+	color: #ffffff;
+	text-align: center;
+	line-height: 0.16rem;
+	margin-top: 0.06rem;	
+}
+.kongqi h2{
+	font-size: 0.12rem;
+	color: #ffffff;
+	text-align: center;
+	line-height: 0.16rem;
+	
+}
+.temp{
+	margin-top: 0.05rem;
+	font-size:0.45rem ;
+	line-height: 0.67rem;
+	color: #fff;
+	margin-left: 2.22rem;
+	width: 0.85rem;
+}
+.continet{
+	font-size: 0.2rem;
+	color: #fff;
+	line-height: 0.36rem;
+	text-align: center;
+}
+.Humidity{
+	width: 0.64rem;
+	height: 0.2rem;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.Humidity span{
+	font-size: 0.13rem;
+	color: #fff;
+	float: left;
+	line-height: 0.2rem;
+	display: block;
+}
+.Humidity div{
+	
+	font-size: 0.13rem;
+	color: #fff;
+	line-height: 0.21rem;
+	margin-left: 0.09rem;
+/* 今天明天开始 */
+}
+.niruo{
+	width: 1.58rem;
+	height: 0.25rem;
+	
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	font-size: 0.16rem;
+	color: #fff;
+	line-height:0.25rem; 
+
+}
+.days{
+	width: 100%;
+	height: 1.02rem;
+	
+	border-bottom: 1px solid #e4e4e4;
+	overflow: hidden;
+	display: flex;
+}
+.today{
+	margin-left: 0.2rem;
+	margin-top: 0.25rem;
+	width: 2.3rem;
+	height: 0.52rem;
+	
+	border-right: 1px solid #e4e4e4;	
+}
+.dasd{
+	width: 2.3rem;
+   height: 0.16rem;
+  
+   display: flex;
+   justify-content: space-between;
+}
+.text{
+   float: left;
+   font-size: 0.14rem;
+   color: #434343;
+   line-height: 0.16rem;
+}
+.textline{
+   
+   height: 0.16rem;
+   
+   margin-right: 0.2rem;
+}
+.textline h1{
+	font-size: 0.14rem;
+	color: #434343;
+	float: left;
+	line-height: 0.16rem;
+}
+.taday-bottom{
+	width: 100%;
+	height: 0.3rem;
+	
+	margin-top: 0.04rem;
+	display: flex;
+    justify-content: space-between;
+}
+.taday-bottom span{
+	font-size: 0.14rem;
+	color: #434343;
+	line-height: 0.3rem;
+}
+.polit{
+	width: 0.2rem;
+	height: 0.2rem;
+	background: pink;
+	margin-right: 0.22rem;
+	background: url('../img/0.png') no-repeat center;
+	margin-top: 0.06rem;
+	background-size: cover;
+}
+
+.tomorrow{
+	margin-top: 0.25rem;
+	width: 2.3rem;
+	height: 0.52rem;
+	/* background: pink; */
+	padding-left: 0.19rem;
+	box-sizing: border-box;
+
+}
+.tom{
+	width: 2.3rem;
+   height: 0.16rem;
+   /* background: red; */
+   display: flex;
+   justify-content: space-between;
+
+}
+.tt-left{
+   float: left;
+   font-size: 0.14rem;
+   color: #434343;
+   line-height: 0.16rem;
+}
+.tt-right{
+   height: 0.16rem;
+   
+   margin-right: 0.2rem;
+}
+.tt-right h1{
+    font-size: 0.14rem;
+	color: #434343;
+	float: left;
+	line-height: 0.16rem;
+}
+.tomorrow-bottom{
+	width: 100%;
+	height: 0.3rem;
+	
+	margin-top: 0.04rem;
+	display: flex;
+    justify-content: space-between;
+}
+.tomorrow-bottom span{
+	font-size: 0.14rem;
+	color: #434343;
+	line-height: 0.3rem;
+}
+.pp{
+	width: 0.2rem;
+	height: 0.2rem;
+	background: pink;
+	margin-right: 0.22rem;
+	background: url('../img/1.png') no-repeat center;
+	margin-top: 0.06rem;
+	background-size: cover;
+}
+/* 今天明天结束 */
+/* 未来24小时天气情况 */
+.hours{
+	width: 100%;
+	height: 1.36rem;
+	
+	border-bottom: 0.01rem solid #e4e4e4;
+	/* 超出部分的设置（水平方向）自动 */
+	overflow-x: auto;
+	/* 内填充，不可占有的部分。 */
+	padding-top: 0.3rem;
+	/* 解决padding的bug */
+	box-sizing: border-box;
+}
+.hours::-webkit-scrollbar{
+	height: 0;
+}
+/* 父元素	容器 */
+.wrap{
+	height: 0.77rem;
+	display: flex;
+}
+/* 子元素 项目 */
+.wrap .now{
+	width: 0.77rem;
+	height: 0.77rem;
+	/* 使子元素不缩小 */
+	flex-shrink: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+.now .now_time{
+	width: 100%;
+	font-size: 0.1rem;
+	color: #999999;
+	text-align: center;
+}
+.now .now_icon{
+	width: 0.22rem;
+	height: 0.2rem;
+	margin: 0 auto;
+	background:url("../img/0.png") no-repeat center;
+	background-size: cover;
+}
+.now .now_temp{
+	width: 100%;
+	font-size: 0.1rem;
+	color: #999999;
+	text-align: center;
+}
+/* 未来24小时天气情况 */
+/* 星期开始 */
+.near{
+	width: 100%;
+	height: 3.91rem;
+	background: white;
+	border-top: 0.01rem solid #e4e4e4;
+	border-bottom: 0.01rem solid #e4e4e4;
+	padding-top: 0.25rem;
+	box-sizing: border-box;
+	overflow-x: auto;
+}
+.near::-webkit-scrollbar{
+	height: 0;
+}
+.warp1{
+	
+	height:3.37rem;
+	
+	 /* 使子元素横排 */
+	display: flex;
+}
+.con{
+	width: 0.82rem;
+	height: 100%;
+	
+	/*禁止 缩小 */
+	flex-shrink: 0;
+	display: flex;
+	/* 换行 */
+	flex-wrap: wrap;
+	/* 垂直 */
+	flex-direction: column;
+	/* 两边对齐 */
+	justify-content: space-between;
+}
+.date{
+	width: 100%;
+	height: 0.14rem;
+	font-size: 0.14rem;
+	color: #c2b2c2;
+	float: left;
+	line-height: 0.14rem;
+	margin-left: 0.24rem;
+	
+}
+
+
+.wealth{
+	
+	
+	font-size: 0.14rem;
+	color: #c2b2c2;
+	
+	text-align: center;
+}
+.www{
+	width: 0.22rem;
+	height: 0.22rem;
+	margin: 0 auto ;
+	background: url('../img/2.png') no-repeat center;
+	background-size: cover;
+}
+.con_high{
+	text-align:center;
+	font-size:0.14rem;
+	color:#b2b2b2;
+}
+.con_low{
+	text-align:center;
+	font-size:0.14rem;
+	color:#b2b2b2;
+}
+.wwww{
+	width: 0.22rem;
+	height: 0.22rem;
+	margin: 0 auto ;
+	background: url('../img/3.png') no-repeat center;
+	background-size: cover;
+}
+.con_weaL{
+	text-align:center;
+	font-size:0.14rem;
+	color:#b2b2b2;
+}
+.con_wind{
+	text-align:center;
+	font-size:0.12rem;
+	color:#b2b2b2;
+}
+.con_level{
+	text-align:center;
+	font-size:0.12rem;
+	color:#b2b2b2;
+}
+/* 星期结束 */
+/* 尾部开始 */
+.last--{
+	width: 100%;
+	height: 1.9rem;
+	background: pink;
+	margin-top: 0.1rem;
+	border: 0.01rem solid #e6e6e6;
+ box-sizing: border-box;
+ }
+.last-- li{
+	width: 25%;
+	height: 0.94rem;
+	background: white;
+	float: left;
+	border-right: 0.01rem solid #e6e6e6;
+	border-bottom: 0.01rem solid #e6e6e6;
+	/* 自定义 */
+	box-sizing: border-box;
+}
+.last-- li:nth-child(4n){
+   border-right:none;
+
+}
+.last-- li:nth-child(4)~li{
+	border-bottom: none;
+}
+.pict-1{
+	width: 0.24rem;
+	height: 0.24rem;
+	background: red;
+    margin: 0 auto;
+	margin-top: 0.17rem;
+	background: url('../img/QQ图片2018083805_07.png') no-repeat center;
+}
+li span{
+	width: 100%;
+	height: 0.14rem;
+	font-size: 0.14rem;
+	color: #434343;
+	float: left;
+	margin-top: 0.1rem;
+	text-align: center;
+}
+li h1{
+	width: 100%;
+	height: 0.13rem;
+	font-size: 0.13rem;
+	color:#999999 ;
+	float: left;
+	margin-top: 0.06rem;
+	text-align: center;
+}
+li:nth-child(2) .pict-1{
+	background: url('../img/QQ图片20180324083805_07.png') no-repeat center;
+}
+li:nth-child(3) .pict-1{
+	background: url('../img/QQ图片20180324083805_09.png') no-repeat center;
+}
+li:nth-child(4) .pict-1{
+	background: url('../img/hfdg.png') no-repeat center;
+}
+li:nth-child(5) .pict-1{
+	background: url('../img/hfdg.png') no-repeat center;
+}
+li:nth-child(6) .pict-1{
+	background: url('../img/func7.png') no-repeat center;
+}
+li:nth-child(8) .pict-1{
+	background: url('../img/func8.png') no-repeat center;
+}
+/* 尾部结束 */
+/* 城市开始 */
+.location{
+	width: 100%;
+	
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	/* display: none;	 */
+}
+
+.serch{
+	width: 100%;
+	height: 0.45rem;
+	
+	border-bottom: 0.01rem solid #eeeeee;
+	/* padding-left: 0.13rem; */
+	/* padding-top:0.07rem;  */
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    z-index: 999;  
+}
+.sercj-box{
+	width: 4.27rem;
+	height: 0.3rem;
+	background: #f2f2f2;
+	border-radius: 0.11rem; 
+	margin-top:0.07rem;
+	margin-left: 0.13rem; 
+}
+.picture{
+	width: 0.14rem;
+	height: 0.14rem;
+	margin-left: 0.1rem;
+	background: url('../img/sfasf.png') no-repeat center;
+	background-size: cover;
+	margin-top: 0.08rem;
+	float: left;
+	/* margin-right: 0.1rem; */
+}
+.sercj-box input{
+	float: right;
+	width: 3.95rem;
+	height:0.15rem;
+	border: none;
+	margin-top: 0.08rem;
+	font-size: 0.14rem;
+	background: #f2f2f2;
+
+}
+.sercj-box input:focus{
+   outline: none;
+}
+.cancl{	 
+	height: 0.3rem;
+	font-size: 0.14rem;
+	color: #434343 ;
+	float: left;
+	margin-right: 0.3rem;
+	line-height: 0.3rem;	
+	margin-top:0.07rem;
+}
+.city1{
+	width: 100%;
+	height: 8rem; 
+
+}
+.remen{
+	padding-left: 0.13rem;
+	font-size: 0.16rem;
+	color: #434343;
+	line-height: 0.46rem;
+	font-weight: normal;
+	margin-top: 0.45rem;
+}
+.con1{
+
+	/* width: 100%; */
+	height: auto;
+	overflow: hidden;
+	
+	padding-left: 0.13rem;
+
+}
+.son{
+	width: 1.52rem;
+	height: 0.32rem;
+	background: #f2f2f2;
+	font-size: 0.16rem;
+	color: #434343;
+	text-align: center;
+	line-height: 0.32rem;
+	border-radius: 0.16rem;
+	float: left;
+	margin-right: 0.09rem;
+	margin-bottom: 0.12rem;
+
+}
+.son:nth-child(9)~ .son{
+   border-bottom: none;
+}
+.where{
+	padding-left: 0.13rem;
+	font-size: 0.16rem;
+	color: #434343;
+	line-height: 0.46rem;
+	font-weight: normal;
+}
+.con2{
+	height: auto;
+	overflow: hidden;
+	padding-left: 0.13rem;
+}
+.son2{
+	width: 1.52rem;
+	height: 0.32rem;
+	background: #f2f2f2;
+	font-size: 0.16rem;
+	color: #434343;
+	text-align: center;
+	line-height: 0.32rem;
+	border-radius: 0.16rem;
+	float: left;
+	margin-right: 0.09rem;
+	margin-bottom: 0.12rem;
+
+}
